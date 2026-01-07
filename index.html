@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IOE K4 - LUYỆN NGHE 100 CÂU (BẢN CHỮ TO)</title>
+    <title>IOE K4 - LUYỆN NGHE 120 CÂU (BẢN CHỮ SIÊU TO)</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -12,24 +12,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     
     <style>
-      body { font-family: 'Nunito', sans-serif; scroll-behavior: smooth; overflow-x: hidden; font-size: 1.125rem; }
-      .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+      body { font-family: 'Nunito', sans-serif; scroll-behavior: smooth; overflow-x: hidden; font-size: 1.25rem; }
+      .custom-scrollbar::-webkit-scrollbar { width: 8px; }
       .custom-scrollbar::-webkit-scrollbar-track { background: #f1f1f1; }
       .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
       
-      @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+      @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
       .animate-fade-in { animation: fadeIn 0.4s ease-out forwards; }
       
-      .btn-active:active { transform: scale(0.96); }
-      .answer-underline { text-decoration-color: #fca5a5; text-decoration-thickness: 4px; text-underline-offset: 4px; }
+      .btn-active:active { transform: scale(0.95); }
+      .answer-underline { text-decoration-color: #fca5a5; text-decoration-thickness: 5px; text-underline-offset: 6px; }
       
-      input::placeholder { color: #cbd5e1; font-weight: 700; }
+      input::placeholder { color: #cbd5e1; font-weight: 800; }
     </style>
 <script type="importmap">
 {
   "imports": {
-    "react": "https://esm.sh/react@^19.2.3",
-    "react/": "https://esm.sh/react@^19.2.3/"
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
   }
 }
 </script>
@@ -145,7 +145,28 @@
             { id: 97, type: QuestionType.FIB, text: "Love _ _ _ _ _ .", audio: "https://cdn.ioe.vn/edu/EOlympic/ExamData/IOE%202022-2023/Chinhthuc/Captinh/Lop4/Amthanh/E4-T-97.mp3", answer: "love", explain: "Yêu.", translation: "yêu thích" },
             { id: 98, type: QuestionType.MC, text: "Birthday?", audio: "https://cdn.ioe.vn/edu/EOlympic/ExamData/IOE%202022-2023/Chinhthuc/Captinh/Lop4/Amthanh/E4-T-120.mp3", options: ["13", "15", "5", "25"], answer: "15", explain: "15th.", translation: "15 tháng 8" },
             { id: 99, type: QuestionType.FIB, text: "Father job.", audio: "https://cdn.ioe.vn/edu/EOlympic/ExamData/Thi_cac_cap/2019-2020/Tinh_Thanhpho/L4/Nghe/De2/2/18.mp3", answer: "musician", explain: "Nhạc sĩ.", translation: "nhạc sĩ" },
-            { id: 100, type: QuestionType.FIB, text: "Go to s_ _ _ _ .", audio: "https://cdn.ioe.vn/edu/EOlympic/ExamData/IOE%202022-2023/Chinhthuc/Captinh/Lop4/Amthanh/E4-T-95.mp3", answer: "leep", explain: "Sleep.", translation: "ngủ" }
+            { id: 100, type: QuestionType.FIB, text: "Go to s_ _ _ _ .", audio: "https://cdn.ioe.vn/edu/EOlympic/ExamData/IOE%202022-2023/Chinhthuc/Captinh/Lop4/Amthanh/E4-T-95.mp3", answer: "leep", explain: "Sleep.", translation: "ngủ" },
+            /* NEW 20 QUESTIONS */
+            { id: 101, type: QuestionType.MC, text: "Listen and choose the correct answer.", audio: "https://cdn.ioe.vn/edu/EOlympic/ExamData/IOE%202022-2023/Chinhthuc/Captinh/Lop4/Amthanh/E4-T-1.mp3", options: ["Brother", "Father", "Mother", "Farmer"], answer: "Farmer", explain: "Farmer: Nông dân.", translation: "nông dân" },
+            { id: 102, type: QuestionType.MC, text: "Listen and choose the correct answer.", audio: "https://cdn.ioe.vn/edu/EOlympic/ExamData/IOE%202022-2023/Chinhthuc/Captinh/Lop4/Amthanh/E4-T-34.mp3", options: ["Festival", "Library", "Animal", "Primary"], answer: "Animal", explain: "Animal: Động vật.", translation: "động vật" },
+            { id: 103, type: QuestionType.FIB, text: "David doesn’t like his _ _ _ _ lessons very much.", audio: "https://cdn.ioe.vn/edu/EOlympic/ExamData/ImageExam/2019/2/22/636864425005705954_Audio.mp3", answer: "Math", explain: "Math: Môn Toán.", translation: "môn toán" },
+            { id: 104, type: QuestionType.FIB, text: "_ _ _ _ _ _", audio: "https://cdn.ioe.vn/edu/EOlympic/ExamData/ImageExam/2019/2/22/636864426194926971_Audio.mp3", answer: "Friday", explain: "Friday: Thứ 6.", translation: "thứ sáu" },
+            { id: 105, type: QuestionType.FIB, text: "_ _ _ _ _ _ _ _", audio: "https://cdn.ioe.vn/edu/EOlympic/ExamData/ImageExam/2019/2/23/636864827501802142_Audio.mp3", answer: "bookshop", explain: "Bookshop: Hiệu sách.", translation: "hiệu sách" },
+            { id: 106, type: QuestionType.MC, text: "Listen and choose the correct answer.", audio: "https://cdn.ioe.vn/edu/EOlympic/ExamData/IOE%202022-2023/Chinhthuc/Captinh/Lop4/Amthanh/E4-T-59.mp3", options: ["Evening", "Fishing", "Morning", "Reading"], answer: "Morning", explain: "Morning: Buổi sáng.", translation: "buổi sáng" },
+            { id: 107, type: QuestionType.MC, text: "Listen and choose the correct answer.", audio: "https://cdn.ioe.vn/edu/EOlympic/ExamData/IOE%202022-2023/Chinhthuc/Captinh/Lop4/Amthanh/E4-T-11.mp3", options: ["Tuesday", "February", "Lemonade", "Saturday"], answer: "Saturday", explain: "Saturday: Thứ 7.", translation: "thứ bảy" },
+            { id: 108, type: QuestionType.FIB, text: "There is a _ _ _ _ _ _ near my home.", audio: "https://cdn.ioe.vn/edu/EOlympic/ExamData/Thi_cac_cap/2019-2020/Tinh_Thanhpho/L4/Nghe/De1/21.mp3", answer: "Bakery", explain: "Bakery: Tiệm bánh.", translation: "tiệm bánh" },
+            { id: 109, type: QuestionType.FIB, text: "Where’s my _ _ _ _ _ of chocolate?", audio: "https://cdn.ioe.vn/edu/EOlympic/ExamData/Thi_cac_cap/2019-2020/Tinh_Thanhpho/L4/Nghe/De2/2/13.mp3", answer: "piece", explain: "Piece: Miếng, mẩu.", translation: "miếng/mẩu" },
+            { id: 110, type: QuestionType.FIB, text: "Wear your school _ _ _ _ _ _ _ on Wednesday.", audio: "https://cdn.ioe.vn/edu/EOlympic/ExamData/ImageExam/2019/2/23/636864827070081206_Audio.mp3", answer: "clothes", explain: "Clothes: Quần áo.", translation: "quần áo" },
+            { id: 111, type: QuestionType.FIB, text: "The bread in this bakery is _ _ _ _ _ _ _ _ _ .", audio: "https://cdn.ioe.vn/edu/EOlympic/ExamData/Thi_cac_cap/2019-2020/Tinh_Thanhpho/L4/Nghe/De2/2/20.mp3", answer: "delicious", explain: "Delicious: Ngon tuyệt.", translation: "ngon tuyệt" },
+            { id: 112, type: QuestionType.FIB, text: "The _ _ _ _ _ _ has eyes at the front of its head.", audio: "https://cdn.ioe.vn/edu/EOlympic/ExamData/Thi_cac_cap/2019-2020/Tinh_Thanhpho/L4/Nghe/De2/3/27.mp3", answer: "monkey", explain: "Monkey: Con khỉ.", translation: "con khỉ" },
+            { id: 113, type: QuestionType.FIB, text: "She’s a teacher. She works in a _ _ _ _ _ _ _ school.", audio: "https://cdn.ioe.vn/edu/EOlympic/ExamData/Thi_cac_cap/2019-2020/Tinh_Thanhpho/L4/Nghe/De1/2/12.mp3", answer: "primary", explain: "Primary: Trường tiểu học.", translation: "tiểu học" },
+            { id: 114, type: QuestionType.FIB, text: "Mai is _ _ _ _ _ _ _ _ _ _ her house.", audio: "https://cdn.ioe.vn/edu/EOlympic/ExamData/Thi_cac_cap/2019-2020/Tinh_Thanhpho/L4/Nghe/De1/2/18.mp3", answer: "decorating", explain: "Decorating: Trang trí.", translation: "trang trí" },
+            { id: 115, type: QuestionType.FIB, text: "What do you do for _ _ _ ?", audio: "https://cdn.ioe.vn/edu/EOlympic/ExamData/IOE%202022-2023/Chinhthuc/Captinh/Lop4/Amthanh/E4-T-108.mp3", answer: "fun", explain: "Fun: Giải trí.", translation: "niềm vui" },
+            { id: 116, type: QuestionType.MC, text: "Where did the children go yesterday?", audio: "https://cdn.ioe.vn/edu/EOlympic/ExamData/IOE%202022-2023/TraiNghiem/E4/R3/nghe/Listening414.mp3", options: ["They went to the park.", "They went to the zoo.", "They went to a farm.", "They went to a museum."], answer: "They went to a farm.", explain: "Farm: Nông trại.", translation: "đi đến nông trại" },
+            { id: 117, type: QuestionType.FIB, text: "But on Thursday, we went _ _ _ _ _ _ _ _ in the lake.", audio: "https://cdn.ioe.vn/edu/EOlympic/ExamData/IOE%202022-2023/TraiNghiem/E4/R3/nghe/Listening418.mp3", answer: "swimming", explain: "Swimming: Đi bơi.", translation: "đi bơi" },
+            { id: 118, type: QuestionType.FIB, text: "The snow is so much _ _ _ .", audio: "https://cdn.ioe.vn/edu/EOlympic/ExamData/IOE%202022-2023/Chinhthuc/Captinh/Lop4/Amthanh/E4-T-99.mp3", answer: "fun", explain: "Fun: Vui vẻ.", translation: "niềm vui" },
+            { id: 119, type: QuestionType.MC, text: "How many brothers and sisters does Sorie have?", audio: "https://cdn.ioe.vn/edu/EOlympic/ExamData/IOE%202022-2023/Chinhthuc/Captinh/Lop4/Amthanh/E4-T-113.mp3", options: ["Five brothers", "Five brothers and one sister", "Six brothers", "Four brothers and two sisters"], answer: "Five brothers", explain: "Five brothers: Năm người anh/em trai.", translation: "năm anh em trai" },
+            { id: 120, type: QuestionType.FIB, text: "What’s the girl’s full name? – She’s Sue _ _ _ _ _ .", audio: "https://cdn.ioe.vn/edu/EOlympic/ExamData/Thi_cac_cap/2019-2020/Tinh_Thanhpho/L4/Nghe/De2/3/22.mp3", answer: "Clark", explain: "Clark: Tên họ Sue Clark.", translation: "họ Clark" }
         ];
 
         const AudioPlayer = ({ src, autoPlay }) => {
@@ -154,13 +175,13 @@
             useEffect(() => { if (autoPlay && audioRef.current) audioRef.current.play().catch(() => {}); }, [src]);
             const toggle = () => { if (audioRef.current.paused) audioRef.current.play(); else audioRef.current.pause(); };
             return (
-                <div className="flex items-center gap-3 bg-indigo-50/50 p-3 rounded-2xl border-2 border-indigo-100 shadow-sm transition-all hover:shadow-md">
-                    <button onClick={toggle} className="w-12 h-12 flex items-center justify-center bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition-all shadow-lg btn-active">
-                        {isPlaying ? <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg> : <svg className="w-7 h-7 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>}
+                <div className="flex items-center gap-4 bg-indigo-50/50 p-4 rounded-3xl border-2 border-indigo-100 shadow-sm transition-all hover:shadow-md">
+                    <button onClick={toggle} className="w-16 h-16 flex items-center justify-center bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition-all shadow-lg btn-active">
+                        {isPlaying ? <svg className="w-9 h-9" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg> : <svg className="w-9 h-9 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>}
                     </button>
                     <div>
-                        <span className="text-sm font-black text-indigo-900 block uppercase tracking-wider leading-none mb-1">Nghe Audio</span>
-                        <span className="text-xs text-indigo-400 font-bold italic block leading-none">Bấm để nghe âm thanh</span>
+                        <span className="text-lg font-black text-indigo-900 block uppercase tracking-wider leading-none mb-1">Nghe Audio</span>
+                        <span className="text-sm text-indigo-400 font-bold italic block leading-none">Bấm nút để nghe âm thanh câu hỏi</span>
                     </div>
                     <audio ref={audioRef} src={src} onPlay={() => setIsPlaying(true)} onPause={() => setIsPlaying(false)} onEnded={() => setIsPlaying(false)} className="hidden" />
                 </div>
@@ -175,16 +196,16 @@
                 return ans.isCorrect ? "bg-emerald-500 text-white border-emerald-600 shadow-md" : "bg-rose-500 text-white border-rose-600 shadow-md";
             };
             return (
-                <div className="fixed inset-0 z-50 bg-slate-900/70 backdrop-blur-md flex items-center justify-center p-4 animate-fade-in">
-                    <div className="bg-white rounded-[2rem] shadow-2xl w-full max-w-4xl max-h-[85vh] flex flex-col overflow-hidden border-4 border-white">
-                        <div className="p-6 border-b flex justify-between items-center bg-slate-50">
-                            <div><h2 className="text-2xl font-black text-slate-800 tracking-tight">Danh Sách Câu Hỏi ({questions.length})</h2><p className="text-xs text-slate-500 font-bold uppercase italic mt-1 tracking-widest">Luyện tập cấp tỉnh IOE</p></div>
-                            <button onClick={onClose} className="p-3 bg-slate-200 hover:bg-slate-300 rounded-2xl text-slate-600 transition-all active:scale-90"><svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M6 18L18 6M6 6l12 12" /></svg></button>
+                <div className="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-md flex items-center justify-center p-4 animate-fade-in">
+                    <div className="bg-white rounded-[2.5rem] shadow-2xl w-full max-w-5xl max-h-[85vh] flex flex-col overflow-hidden border-4 border-white">
+                        <div className="p-8 border-b flex justify-between items-center bg-slate-50">
+                            <div><h2 className="text-3xl font-black text-slate-800 tracking-tight">Danh Sách Câu Hỏi ({questions.length})</h2><p className="text-sm text-slate-500 font-bold uppercase italic mt-1 tracking-widest">Luyện tập cấp tỉnh IOE K4 - Part 2</p></div>
+                            <button onClick={onClose} className="p-4 bg-slate-200 hover:bg-slate-300 rounded-[1.5rem] text-slate-600 transition-all active:scale-90"><svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M6 18L18 6M6 6l12 12" /></svg></button>
                         </div>
-                        <div className="flex-1 overflow-y-auto p-6 custom-scrollbar">
-                            <div className="grid grid-cols-5 sm:grid-cols-10 gap-3">
+                        <div className="flex-1 overflow-y-auto p-8 custom-scrollbar">
+                            <div className="grid grid-cols-4 sm:grid-cols-10 gap-4">
                                 {questions.map((q, idx) => (
-                                    <button key={q.id} onClick={() => { onJump(idx); onClose(); }} className={`h-11 w-11 rounded-xl font-black text-xs border-2 transition-all btn-active ${getStatusColor(q, idx)}`}>{q.id}</button>
+                                    <button key={q.id} onClick={() => { onJump(idx); onClose(); }} className={`h-14 w-14 rounded-2xl font-black text-sm border-2 transition-all btn-active ${getStatusColor(q, idx)}`}>{q.id}</button>
                                 ))}
                             </div>
                         </div>
@@ -220,14 +241,14 @@
             }, [gameState, currentIndex, userAnswers, inputValue]);
 
             if (gameState === 'START') return (
-                <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-700 to-blue-600 p-4">
-                    <div className="bg-white rounded-[2.5rem] shadow-2xl p-10 max-w-md w-full text-center animate-fade-in border-4 border-white/20">
-                        <div className="w-20 h-20 bg-indigo-50 text-indigo-600 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-inner"><svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15.536a5 5 0 001.414 1.414m2.828-9.9a9 9 0 012.828 0M5 10a5 5 0 015-5 5 5 0 015 5v2a5 5 0 01-5 5 5 5 0 01-5-5v-2z"></path></svg></div>
-                        <h1 className="text-3xl font-black text-slate-800 mb-2 tracking-tighter uppercase leading-tight">IOE K4 LUYỆN NGHE</h1>
-                        <p className="text-slate-400 mb-8 font-black text-xs tracking-widest uppercase italic">Cấp Tỉnh - Bộ 100 Câu Hỏi</p>
-                        <div className="text-left mb-2 ml-1 text-sm font-black text-slate-500 uppercase">Tên của bạn</div>
-                        <input type="text" placeholder="Nhập tên tại đây..." className="w-full px-6 py-4 rounded-[1.5rem] border-4 border-slate-50 focus:border-indigo-500 outline-none mb-8 text-xl font-black shadow-inner transition-all" onChange={e => setUserName(e.target.value)} onKeyDown={e => e.key === 'Enter' && userName.trim() && startQuiz(userName)} />
-                        <button onClick={() => userName.trim() && startQuiz(userName)} className="w-full py-5 bg-indigo-600 text-white rounded-[1.5rem] text-xl font-black shadow-xl hover:bg-indigo-700 active:scale-95 transition-all tracking-tight uppercase">BẮT ĐẦU CHƠI 🎯</button>
+                <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-700 via-blue-600 to-indigo-800 p-4">
+                    <div className="bg-white rounded-[3rem] shadow-2xl p-12 max-w-lg w-full text-center animate-fade-in border-4 border-white/20">
+                        <div className="w-24 h-24 bg-indigo-50 text-indigo-600 rounded-[2rem] flex items-center justify-center mx-auto mb-8 shadow-inner"><svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15.536a5 5 0 001.414 1.414m2.828-9.9a9 9 0 012.828 0M5 10a5 5 0 015-5 5 5 0 015 5v2a5 5 0 01-5 5 5 5 0 01-5-5v-2z"></path></svg></div>
+                        <h1 className="text-4xl font-black text-slate-800 mb-2 tracking-tighter uppercase leading-tight italic">LUYỆN THI IOE K4</h1>
+                        <p className="text-slate-400 mb-10 font-black text-sm tracking-widest uppercase italic bg-slate-50 py-2 rounded-xl">Bộ Đề 120 Câu Hỏi - Nghe Cấp Tỉnh</p>
+                        <div className="text-left mb-3 ml-2 text-base font-black text-slate-500 uppercase tracking-wide">Nhập tên thí sinh:</div>
+                        <input type="text" placeholder="Nhập tên tại đây..." className="w-full px-8 py-5 rounded-[2rem] border-[6px] border-slate-50 focus:border-indigo-500 outline-none mb-10 text-2xl font-black shadow-inner transition-all placeholder-slate-200" onChange={e => setUserName(e.target.value)} onKeyDown={e => e.key === 'Enter' && userName.trim() && startQuiz(userName)} />
+                        <button onClick={() => userName.trim() && startQuiz(userName)} className="w-full py-6 bg-indigo-600 text-white rounded-[2rem] text-2xl font-black shadow-xl hover:bg-indigo-700 active:scale-95 transition-all tracking-tight uppercase shadow-indigo-200">BẮT ĐẦU NGAY 🎯</button>
                     </div>
                 </div>
             );
@@ -236,14 +257,14 @@
                 const correctCount = userAnswers.filter(a => a.isCorrect).length;
                 return (
                     <div className="min-h-screen bg-slate-50 flex flex-col items-center justify-center p-4">
-                        <div className="bg-white rounded-[3rem] shadow-2xl p-12 max-w-lg w-full text-center animate-fade-in border-4 border-slate-50 relative">
-                            <h2 className="text-3xl font-black text-slate-800 mb-6 tracking-tight uppercase italic">HOÀN THÀNH BÀI THI!</h2>
-                            <div className="flex justify-center mb-8"><div className="w-40 h-40 rounded-full border-[12px] border-slate-100 flex items-center justify-center text-4xl font-black text-indigo-600 shadow-inner relative">{Math.round((correctCount/QUIZ_DATA.length)*100)}%<div className="absolute -bottom-2 bg-indigo-600 text-white text-[10px] px-5 py-2 rounded-full font-black uppercase tracking-widest shadow-lg">Đúng {correctCount}/{QUIZ_DATA.length}</div></div></div>
-                            <div className="grid grid-cols-2 gap-4 mb-8">
-                                <div className="bg-emerald-50 p-6 rounded-3xl border-2 border-emerald-100 shadow-sm"><div className="text-4xl font-black text-emerald-600">{correctCount}</div><div className="text-[10px] uppercase font-black text-emerald-400 tracking-widest mt-1">Câu Đúng</div></div>
-                                <div className="bg-rose-50 p-6 rounded-3xl border-2 border-rose-100 shadow-sm"><div className="text-4xl font-black text-rose-600">{QUIZ_DATA.length - correctCount}</div><div className="text-[10px] uppercase font-black text-rose-400 tracking-widest mt-1">Câu Sai</div></div>
+                        <div className="bg-white rounded-[4rem] shadow-2xl p-16 max-w-xl w-full text-center animate-fade-in border-[6px] border-slate-50 relative">
+                            <h2 className="text-4xl font-black text-slate-800 mb-8 tracking-tight uppercase italic underline decoration-indigo-200 underline-offset-8">KẾT QUẢ BÀI THI</h2>
+                            <div className="flex justify-center mb-10"><div className="w-48 h-48 rounded-full border-[16px] border-slate-100 flex items-center justify-center text-5xl font-black text-indigo-600 shadow-inner relative">{Math.round((correctCount/QUIZ_DATA.length)*100)}%<div className="absolute -bottom-3 bg-indigo-600 text-white text-xs px-8 py-3 rounded-full font-black uppercase tracking-widest shadow-xl">Đúng {correctCount}/{QUIZ_DATA.length}</div></div></div>
+                            <div className="grid grid-cols-2 gap-6 mb-10">
+                                <div className="bg-emerald-50 p-8 rounded-[2.5rem] border-4 border-emerald-100 shadow-sm"><div className="text-5xl font-black text-emerald-600">{correctCount}</div><div className="text-xs uppercase font-black text-emerald-400 tracking-widest mt-2">Câu Chính Xác</div></div>
+                                <div className="bg-rose-50 p-8 rounded-[2.5rem] border-4 border-rose-100 shadow-sm"><div className="text-5xl font-black text-rose-600">{QUIZ_DATA.length - correctCount}</div><div className="text-xs uppercase font-black text-rose-400 tracking-widest mt-2">Câu Bị Sai</div></div>
                             </div>
-                            <button onClick={() => window.location.reload()} className="px-12 py-5 bg-indigo-600 text-white rounded-[1.5rem] font-black shadow-xl hover:bg-indigo-700 transition-all text-xl tracking-tight uppercase">CHƠI LẠI TỪ ĐẦU</button>
+                            <button onClick={() => window.location.reload()} className="px-16 py-6 bg-indigo-600 text-white rounded-[2rem] font-black shadow-2xl hover:bg-indigo-700 transition-all text-2xl tracking-tight uppercase shadow-indigo-100">THỬ LẠI TỪ ĐẦU</button>
                         </div>
                     </div>
                 );
@@ -254,71 +275,77 @@
             const isDone = !!currentAns;
 
             return (
-                <div className="min-h-screen bg-slate-100 flex flex-col items-center py-6 px-4 pb-32">
-                    <div className="w-full max-w-2xl flex justify-between items-center mb-4 bg-white p-4 rounded-3xl shadow-md border-2 border-white">
-                        <div className="flex items-center gap-4">
-                            <div className="w-11 h-11 bg-indigo-600 rounded-2xl flex items-center justify-center font-black text-white text-xl shadow-lg border-2 border-white/20">{userName.charAt(0).toUpperCase()}</div>
-                            <div><span className="font-black text-slate-800 text-base block leading-none">{userName}</span><span className="text-[10px] font-black text-slate-400 uppercase tracking-widest mt-1 block">Luyện thi IOE K4</span></div>
+                <div className="min-h-screen bg-slate-100 flex flex-col items-center py-8 px-4 pb-40">
+                    <div className="w-full max-w-3xl flex justify-between items-center mb-6 bg-white p-6 rounded-[2.5rem] shadow-lg border-4 border-white">
+                        <div className="flex items-center gap-5">
+                            <div className="w-16 h-16 bg-indigo-600 rounded-3xl flex items-center justify-center font-black text-white text-3xl shadow-xl border-4 border-white/20">{userName.charAt(0).toUpperCase()}</div>
+                            <div><span className="font-black text-slate-800 text-2xl block leading-none">{userName}</span><span className="text-xs font-black text-slate-400 uppercase tracking-widest mt-2 block">Thí sinh IOE K4</span></div>
                         </div>
-                        <div className="flex gap-2"><button onClick={() => setShowGrid(true)} className="px-4 py-2 bg-indigo-50 text-indigo-600 rounded-xl font-black text-xs uppercase tracking-widest hover:bg-indigo-100 active:scale-90 transition-all">List</button><div className="font-black text-indigo-600 px-4 py-2 bg-indigo-100 rounded-xl text-lg shadow-inner">{currentIndex + 1}/{QUIZ_DATA.length}</div></div>
+                        <div className="flex gap-3"><button onClick={() => setShowGrid(true)} className="px-6 py-3 bg-indigo-50 text-indigo-600 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-indigo-100 active:scale-90 transition-all shadow-sm">BẢNG CÂU</button><div className="font-black text-indigo-600 px-6 py-3 bg-indigo-100 rounded-2xl text-2xl shadow-inner border-2 border-indigo-200">{currentIndex + 1}/{QUIZ_DATA.length}</div></div>
                     </div>
-                    <div className="w-full max-w-2xl bg-slate-200 h-2.5 rounded-full mb-6 overflow-hidden shadow-inner border-2 border-white"><div className="bg-gradient-to-r from-indigo-600 to-blue-400 h-full transition-all duration-700 ease-out" style={{ width: `${((currentIndex + 1) / QUIZ_DATA.length) * 100}%` }}></div></div>
                     
-                    <div className="w-full max-w-2xl bg-white rounded-[2.5rem] shadow-2xl p-8 sm:p-10 relative overflow-hidden animate-fade-in border-4 border-slate-50">
-                        <div className="flex justify-between items-center mb-6"><span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-[10px] font-black uppercase tracking-widest shadow-sm">ID: {currentQ.id}</span>{!isDone && <button onClick={() => setShowHint(!showHint)} className="px-4 py-1.5 bg-amber-50 text-amber-700 border-2 border-amber-200 rounded-full text-xs font-black uppercase hover:bg-amber-100 transition-all shadow-sm active:scale-95">{showHint ? "ẨN GỢI Ý" : "XEM GỢI Ý 💡"}</button>}</div>
-                        <div className="mb-8"><AudioPlayer src={currentQ.audio} autoPlay={true} /></div>
+                    <div className="w-full max-w-3xl bg-slate-200 h-4 rounded-full mb-8 overflow-hidden shadow-inner border-4 border-white"><div className="bg-gradient-to-r from-indigo-600 via-blue-500 to-indigo-400 h-full transition-all duration-700 ease-out" style={{ width: `${((currentIndex + 1) / QUIZ_DATA.length) * 100}%` }}></div></div>
+                    
+                    <div className="w-full max-w-3xl bg-white rounded-[3.5rem] shadow-2xl p-10 sm:p-14 relative overflow-hidden animate-fade-in border-[8px] border-slate-50">
+                        <div className="flex justify-between items-center mb-10"><span className="px-5 py-2 bg-indigo-100 text-indigo-700 rounded-full text-xs font-black uppercase tracking-widest shadow-sm">CÂU HỎI SỐ: {currentQ.id}</span>{!isDone && <button onClick={() => setShowHint(!showHint)} className="px-6 py-2.5 bg-amber-50 text-amber-700 border-[3px] border-amber-200 rounded-full text-sm font-black uppercase hover:bg-amber-100 transition-all shadow-md active:scale-95">{showHint ? "ẨN GỢI Ý" : "XEM GỢI Ý 💡"}</button>}</div>
+                        
+                        <div className="mb-10"><AudioPlayer src={currentQ.audio} autoPlay={true} /></div>
+                        
                         {showHint && !isDone && (
-                            <div className="mb-8 bg-amber-50 p-6 rounded-3xl border-2 border-amber-200 text-amber-900 shadow-inner animate-fade-in space-y-4 font-black text-sm">
+                            <div className="mb-10 bg-amber-50 p-8 rounded-[2.5rem] border-4 border-amber-200 text-amber-900 shadow-inner animate-fade-in space-y-5 font-black text-base">
                                 {currentQ.type === QuestionType.FIB && (
                                     <>
-                                        <p className="flex items-center gap-3"><span className="bg-amber-200 w-8 h-8 rounded-xl flex items-center justify-center shrink-0 shadow-sm text-lg">📏</span> Từ có <span className="text-indigo-600 text-xl font-black mx-1">{currentQ.answer.length}</span> chữ cái.</p>
-                                        <p className="flex items-center gap-3"><span className="bg-amber-200 w-8 h-8 rounded-xl flex items-center justify-center shrink-0 shadow-sm text-lg">🔤</span> Bắt đầu: <span className="text-indigo-600 text-2xl uppercase underline decoration-4 decoration-indigo-200 underline-offset-4">"{currentQ.answer.charAt(0)}"</span></p>
+                                        <p className="flex items-center gap-4"><span className="bg-amber-200 w-10 h-10 rounded-2xl flex items-center justify-center shrink-0 shadow-sm text-2xl">📏</span> Từ cần điền có <span className="text-indigo-600 text-3xl font-black mx-1 underline">{currentQ.answer.length}</span> chữ cái.</p>
+                                        <p className="flex items-center gap-4"><span className="bg-amber-200 w-10 h-10 rounded-2xl flex items-center justify-center shrink-0 shadow-sm text-2xl">🔤</span> Chữ cái bắt đầu là: <span className="text-indigo-600 text-4xl uppercase underline decoration-[6px] decoration-indigo-200 underline-offset-8">"{currentQ.answer.charAt(0)}"</span></p>
                                     </>
                                 )}
-                                <div className="border-t-2 border-amber-200 pt-4"><span className="text-amber-500 text-[10px] uppercase block mb-1 tracking-widest">Dịch nghĩa (Tiếng Việt):</span><p className="text-xl text-indigo-950 italic font-black leading-tight tracking-tight">"{currentQ.translation}"</p></div>
+                                <div className="border-t-4 border-amber-200 pt-6"><span className="text-amber-500 text-xs uppercase block mb-2 tracking-widest font-black">Nghĩa của từ (Dịch Việt):</span><p className="text-3xl text-indigo-950 italic font-black leading-tight tracking-tight">"{currentQ.translation}"</p></div>
                             </div>
                         )}
-                        <h2 className="text-2xl sm:text-3xl font-black text-slate-800 mb-10 italic leading-snug tracking-tight">"{currentQ.text}"</h2>
+                        
+                        <h2 className="text-3xl sm:text-4xl font-black text-slate-800 mb-12 italic leading-relaxed tracking-tight underline decoration-slate-100 underline-offset-[12px]">"{currentQ.text}"</h2>
+                        
                         {currentQ.type === QuestionType.MC ? (
-                            <div className="grid grid-cols-1 gap-4">
+                            <div className="grid grid-cols-1 gap-6">
                                 {currentQ.options.map((opt, i) => {
                                     const isCorrect = opt === currentQ.answer; const isSelected = currentAns?.userResponse === opt;
-                                    let style = "bg-white border-4 border-slate-100 text-slate-700 hover:border-indigo-500 hover:bg-indigo-50/10";
-                                    if (isDone) { if (isCorrect) style = "bg-emerald-500 border-emerald-500 text-white scale-[1.02] shadow-xl"; else if (isSelected) style = "bg-rose-500 border-rose-500 text-white opacity-80 shadow-lg scale-[0.98]"; else style = "bg-white border-slate-50 text-slate-300 opacity-40 pointer-events-none grayscale"; }
-                                    return <button key={i} onClick={() => !isDone && handleAnswer(opt)} disabled={isDone} className={`p-5 rounded-3xl font-black text-xl transition-all text-left flex items-center gap-5 shadow-sm btn-active ${style}`}><span className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 border-2 font-black text-xs ${isDone && isCorrect ? 'bg-white/20 border-white text-white' : 'bg-slate-50 border-slate-200 text-slate-400'}`}>{String.fromCharCode(65+i)}</span>{opt}</button>;
+                                    let style = "bg-white border-[6px] border-slate-100 text-slate-700 hover:border-indigo-500 hover:bg-indigo-50/20";
+                                    if (isDone) { if (isCorrect) style = "bg-emerald-500 border-emerald-500 text-white scale-[1.03] shadow-2xl"; else if (isSelected) style = "bg-rose-500 border-rose-500 text-white opacity-80 shadow-xl scale-[0.97]"; else style = "bg-white border-slate-50 text-slate-300 opacity-40 pointer-events-none grayscale"; }
+                                    return <button key={i} onClick={() => !isDone && handleAnswer(opt)} disabled={isDone} className={`p-7 rounded-[2.5rem] font-black text-2xl transition-all text-left flex items-center gap-7 shadow-md btn-active ${style}`}><span className={`w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 border-[4px] font-black text-lg ${isDone && isCorrect ? 'bg-white/30 border-white text-white' : 'bg-slate-50 border-slate-200 text-slate-400'}`}>{String.fromCharCode(65+i)}</span>{opt}</button>;
                                 })}
                             </div>
                         ) : (
-                            <div className="space-y-4">
-                                <div className="flex flex-col sm:flex-row gap-4">
-                                    <input type="text" value={isDone ? currentAns.userResponse : inputValue} onChange={e => setInputValue(e.target.value)} disabled={isDone} autoFocus placeholder="Điền từ bạn nghe được..." className={`flex-1 p-6 rounded-[2rem] border-[6px] font-black text-2xl outline-none shadow-inner tracking-tight transition-all ${isDone ? (currentAns.isCorrect ? "bg-emerald-50 border-emerald-500 text-emerald-800" : "bg-rose-50 border-rose-500 text-rose-800") : "bg-slate-100 border-slate-100 focus:border-indigo-500 focus:bg-white"}`} />
-                                    {!isDone && <button onClick={() => inputValue.trim() && handleAnswer(inputValue)} className="px-10 py-5 bg-indigo-600 text-white rounded-[2rem] font-black shadow-xl hover:bg-indigo-700 active:scale-90 transition-all text-xl uppercase tracking-tighter">NỘP BÀI</button>}
+                            <div className="space-y-6">
+                                <div className="flex flex-col sm:flex-row gap-6">
+                                    <input type="text" value={isDone ? currentAns.userResponse : inputValue} onChange={e => setInputValue(e.target.value)} disabled={isDone} autoFocus placeholder="Gõ câu trả lời..." className={`flex-1 p-8 rounded-[2.5rem] border-[8px] font-black text-3xl outline-none shadow-inner tracking-tight transition-all placeholder-slate-100 ${isDone ? (currentAns.isCorrect ? "bg-emerald-50 border-emerald-500 text-emerald-800" : "bg-rose-50 border-rose-500 text-rose-800") : "bg-slate-100 border-slate-100 focus:border-indigo-500 focus:bg-white focus:ring-[12px] focus:ring-indigo-50"}`} />
+                                    {!isDone && <button onClick={() => inputValue.trim() && handleAnswer(inputValue)} className="px-12 py-6 bg-indigo-600 text-white rounded-[2.5rem] font-black shadow-2xl hover:bg-indigo-700 active:scale-90 transition-all text-2xl uppercase tracking-tighter shadow-indigo-100">NỘP BÀI</button>}
                                 </div>
-                                {!isDone && <p className="text-[10px] text-slate-400 font-black uppercase text-center tracking-widest">Bấm phím ENTER để nộp bài nhanh</p>}
+                                {!isDone && <p className="text-xs text-slate-400 font-black uppercase text-center tracking-[0.2em] animate-pulse">NHẤN PHÍM ENTER ĐỂ NỘP NHANH</p>}
                             </div>
                         )}
+                        
                         {isDone && (
-                            <div className={`mt-10 p-8 rounded-[2.5rem] flex gap-7 items-start border-[6px] animate-fade-in shadow-2xl ${currentAns.isCorrect ? 'bg-emerald-50 border-emerald-200 text-emerald-900' : 'bg-rose-50 border-rose-200 text-rose-900'}`}>
-                                <div className={`w-16 h-16 rounded-3xl flex items-center justify-center shrink-0 text-white text-3xl font-black shadow-lg ${currentAns.isCorrect ? 'bg-emerald-500' : 'bg-rose-500'}`}>{currentAns.isCorrect ? "✓" : "✕"}</div>
+                            <div className={`mt-14 p-10 rounded-[3.5rem] flex gap-10 items-start border-[10px] animate-fade-in shadow-2xl ${currentAns.isCorrect ? 'bg-emerald-50 border-emerald-200 text-emerald-900' : 'bg-rose-50 border-rose-200 text-rose-900'}`}>
+                                <div className={`w-24 h-24 rounded-[2rem] flex items-center justify-center shrink-0 text-white text-5xl font-black shadow-xl ${currentAns.isCorrect ? 'bg-emerald-500 shadow-emerald-200' : 'bg-rose-500 shadow-rose-200'}`}>{currentAns.isCorrect ? "✓" : "✕"}</div>
                                 <div className="flex-1">
-                                    <h4 className="font-black text-3xl mb-2 uppercase italic leading-none">{currentAns.isCorrect ? "CHÍNH XÁC!" : "CHƯA ĐÚNG!"}</h4>
+                                    <h4 className="font-black text-4xl mb-4 uppercase italic leading-none tracking-tighter">{currentAns.isCorrect ? "RẤT CHÍNH XÁC!" : "CHƯA CHÍNH XÁC!"}</h4>
                                     {!currentAns.isCorrect && (
-                                        <div className="mb-4">
-                                            <span className="text-xs font-black uppercase text-rose-400 block mb-1">Đáp án đúng:</span>
-                                            <span className="bg-white px-5 py-2 rounded-2xl border-2 border-rose-200 inline-block font-black text-3xl text-rose-600 uppercase answer-underline tracking-tight">{currentQ.answer}</span>
+                                        <div className="mb-6">
+                                            <span className="text-sm font-black uppercase text-rose-400 block mb-2 tracking-widest">Đáp án đúng:</span>
+                                            <span className="bg-white px-8 py-3 rounded-3xl border-4 border-rose-200 inline-block font-black text-5xl text-rose-600 uppercase answer-underline tracking-tighter shadow-sm">{currentQ.answer}</span>
                                         </div>
                                     )}
-                                    <p className="text-lg font-bold opacity-80 italic leading-relaxed">"{currentQ.explain}"</p>
-                                    <p className="mt-5 text-slate-400 font-black text-[10px] uppercase tracking-widest animate-pulse">Bấm ENTER tiếp để sang câu mới →</p>
+                                    <p className="text-xl font-bold opacity-80 italic leading-relaxed">"{currentQ.explain}"</p>
+                                    <div className="mt-8 pt-6 border-t-2 border-current/10 flex items-center gap-3"><div className="w-4 h-4 rounded-full bg-indigo-500 animate-ping"></div><p className="text-sm font-black uppercase tracking-widest text-slate-400">GÕ ENTER ĐỂ SANG CÂU TIẾP THEO →</p></div>
                                 </div>
                             </div>
                         )}
                     </div>
                     
-                    <div className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t p-4 z-40 shadow-2xl">
-                        <div className="max-w-2xl mx-auto flex justify-between gap-4">
-                            <button onClick={goPrev} disabled={currentIndex === 0} className="px-8 py-4 bg-white border-2 border-slate-100 rounded-2xl font-black text-slate-300 hover:text-indigo-600 hover:border-indigo-600 disabled:opacity-30 transition-all shadow-sm btn-active">← CÂU TRƯỚC</button>
-                            <button onClick={goNext} disabled={!isDone} className={`flex-1 py-4 rounded-2xl font-black text-xl transition-all shadow-xl uppercase tracking-tighter ${isDone ? "bg-indigo-600 text-white hover:bg-indigo-700 active:scale-95 shadow-indigo-200" : "bg-slate-100 text-slate-300 pointer-events-none"}`}>{currentIndex === QUIZ_DATA.length - 1 ? "XEM KẾT QUẢ 🎉" : "CÂU TIẾP THEO →"}</button>
+                    <div className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-xl border-t-4 border-slate-50 p-6 z-40 shadow-[0_-20px_50px_rgba(0,0,0,0.1)]">
+                        <div className="max-w-3xl mx-auto flex justify-between gap-6">
+                            <button onClick={goPrev} disabled={currentIndex === 0} className="px-10 py-5 bg-white border-4 border-slate-100 rounded-3xl font-black text-slate-300 hover:text-indigo-600 hover:border-indigo-600 disabled:opacity-30 transition-all shadow-md btn-active text-lg">← CÂU TRƯỚC</button>
+                            <button onClick={goNext} disabled={!isDone} className={`flex-1 py-5 rounded-3xl font-black text-2xl transition-all shadow-2xl uppercase tracking-tighter ${isDone ? "bg-indigo-600 text-white hover:bg-indigo-700 active:scale-95 shadow-indigo-200" : "bg-slate-100 text-slate-300 pointer-events-none"}`}>{currentIndex === QUIZ_DATA.length - 1 ? "HOÀN THÀNH 🎉" : "CÂU TIẾP THEO →"}</button>
                         </div>
                     </div>
                     {showGrid && <QuestionGrid questions={QUIZ_DATA} userAnswers={userAnswers} currentIndex={currentIndex} onJump={setCurrentIndex} onClose={() => setShowGrid(false)} />}
